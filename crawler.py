@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 # Minimum required Pyhton 3.4
 
+'''
+Rodar: python3 crawler.py lista_de_url.txt
+'''
+
 __author__ = "Demian Andrade (demian@demianandrade.com)"
 __version__ = "1.0.0"
 __copyright__ = "Copyright (c) 2021 Demian Andrade"
@@ -163,7 +167,7 @@ if __name__ == '__main__':
 
 
     # list of domains to crawl this time
-    domains_to_crawl = "lista1.txt"
+    domains_to_crawl = sys.argv[1] #"lista1.txt"
 
     # initialize db, update and sanitize tables
     db = Database()
